@@ -6,6 +6,10 @@ env:
   global:
     - BANANAS: apples =)
 
+branches:
+  only:
+    - master
+
 script:
   - npm run build:production
 

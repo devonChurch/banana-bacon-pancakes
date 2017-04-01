@@ -68,13 +68,12 @@ module.exports = () => ({
 
 		new WebpackShellPlugin({
 
-			onBuildStart:[
-				`echo "Webpack Start (${ isProduction ? 'production' : 'development'})"`,
+			onBuildStart: [
+				`echo "webpack start (${ isProduction ? 'production' : 'development'}) sequence"`,
 			],
 
-			onBuildEnd:[
+			onBuildEnd: isProduction ? [] : [
 				'curl -XPUT -T ./dist/public/js/client.js localhost:8004/research-hub/',
-				'echo "Webpack End"',
 			]
 		}),
 

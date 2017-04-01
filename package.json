@@ -4,7 +4,6 @@
   "description": "A Webpack 2 build system that pushes assets to a local or production AWS S3 bucket for consumption",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build:development": "webpack",
     "build:production": "webpack -p",
 	"start:s3rver": "docker run -d -p 8004:4568 triplew/s3rver"

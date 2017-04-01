@@ -1,0 +1,15 @@
+language: node_js
+node_js: '6.7'
+env:
+  global:
+  - BANANAS: apples =)
+deploy:
+  provider: s3
+  access_key_id: AKIAJ3XHOXWRQMGWCP7Q
+  secret_access_key:
+    secure: jGNT42+YoyCyyrhXJY7NILxYXyM4fV4YQXT0xAPLHBH5CdxlzczgXRapswj3u4Q/cMwnN9rfPXM1/RHoSxnWs45F58h61jqwe5+ud1qKQi9DGkNym64oJRvOcS9N74o/cbVq5002CjwzrlEp7z+uJ+YmgSliivJGXTBRUDUVqzh3/t7gvCDbaueCqQTU0H0ummAcQYZlR5CLE3zRMdXI8eKDB8RGC9u7RvNw+15itBSiitrgjV8i5Vo869wZ+TJcIyXLCmp2lg6q8MJDKHkAMv9x9SxvwIZpyZjQS9lirrUu51dkHrVNjQqXbP1UyvWzwiq5tCGgYpwiQB5+4f3SOMAfLKaqz/T+08rTj1mKLd84PVUG/vUFiQwhV8w5ZKRXo8x9YK4cyXpsj1dYl/kxouoqH8Npvx8qNbHXPLsCxSjxvvWWL+VZPYmBu5YByaBbd8/igESqpepLd09w8HzN+KoQVDiqKzemTXHCuDprtIhRNrLEzRooAgNwait8dtp7pARiHgjuFRgS1U/fo1e/0GMaKochUsAGbnmUk3FdWtx+lsAoo0KSFz8mjpUS43L4Ti2IZPp+rlYiTDgBiehX+OlS7xujuLyFO9x/IsU7kQAdPoStDmefUnR4XaXeQ8YaFF2G5IxYlGBg6L0CtzrcgHWaULq844tGymbWylX/UGA=
+  bucket: research-hub
+  local-dir: dist/public/
+  acl: public_read
+  on:
+    repo: devonChurch/banana-bacon-pancakes

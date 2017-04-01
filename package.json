@@ -1,0 +1,49 @@
+{
+  "name": "banana-bacon-pancakes",
+  "version": "1.0.0",
+  "description": "A Webpack 2 build system that pushes assets to a local or production AWS S3 bucket for consumption",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:development": "webpack",
+    "build:production": "webpack -p",
+	"start:s3rver": "docker run -d -p 8004:4568 triplew/s3rver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devonChurch/banana-bacon-pancakes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devonChurch/banana-bacon-pancakes/issues"
+  },
+  "homepage": "https://github.com/devonChurch/banana-bacon-pancakes#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "css-loader": "^0.27.3",
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "jest": "^19.0.2",
+    "node-sass": "^4.5.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-loader": "^1.3.3",
+    "s3rver": "^1.0.3",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.14.1",
+    "webpack": "^2.2.1",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0"
+  }
+}

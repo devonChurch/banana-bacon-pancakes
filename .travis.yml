@@ -1,8 +1,14 @@
 language: node_js
+
 node_js: '6.7'
+
 env:
   global:
-  - BANANAS: apples =)
+    - BANANAS: apples =)
+
+script:
+  - npm run build:production
+
 deploy:
   provider: s3
   access_key_id: AKIAJ3XHOXWRQMGWCP7Q

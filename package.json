@@ -4,8 +4,9 @@
   "description": "A Webpack 2 build system that pushes assets to a local or production AWS S3 bucket for consumption",
   "main": "webpack.config.js",
   "scripts": {
-    "build:development": "NODE_ENV=development webpack",
+    "build:development": "NODE_ENV=development webpack --watch",
     "build:production": "webpack -p",
+	"build:bucket": "curl -XPUT localhost:8004/research-hub",
 	"start:s3rver": "docker run -d -p 8004:4568 triplew/s3rver"
   },
   "repository": {

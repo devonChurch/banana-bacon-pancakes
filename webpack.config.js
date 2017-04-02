@@ -73,6 +73,7 @@ module.exports = () => ({
 			],
 
 			onBuildEnd: isProduction ? [] : [
+				'echo "transfer assets to local s3"',
 				'curl -XPUT -T ./dist/public/js/client.js localhost:8004/research-hub/',
 			]
 		}),

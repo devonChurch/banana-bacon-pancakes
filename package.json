@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build:development": "NODE_ENV=development webpack",
-    "build:production": "NODE_ENV=production webpack -p",
+    "build:production": "webpack -p",
 	"start:s3rver": "docker run -d -p 8004:4568 triplew/s3rver"
   },
   "repository": {

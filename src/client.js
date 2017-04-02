@@ -1,3 +1,3 @@
-const init = () => document.write('hello =)');
+const init = () => document.write('hello!');
 
 init();

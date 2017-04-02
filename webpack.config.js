@@ -2,8 +2,7 @@ const { resolve } = require('path');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-console.log('NODE_ENV', process.env.NODE_ENV);
-const isProduction = !(process.env.NODE_ENV === 'production');
+const isProduction = !(process.env.NODE_ENV === 'development');
 
 module.exports = () => ({
 
